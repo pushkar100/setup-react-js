@@ -34,6 +34,7 @@ module.exports = ({ mode }) => {
       },
       plugins: [
         new HtmlWebpackPlugin({
+          template: './src/index.html',
           title: 'Vanilla JS Project',
         }),
         new CleanWebpackPlugin(),

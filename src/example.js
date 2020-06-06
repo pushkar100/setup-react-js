@@ -1,8 +1,11 @@
-export const b = 5
+import React, { Component } from 'react'
 
-export default class B {
+class Simple extends Component {
   state = {}
-  method = () => {
-    return 'method'
+  method = () => 'method of Simple'
+  render() {
+    return <div>Hello</div>
   }
 }
+
+export default Simple

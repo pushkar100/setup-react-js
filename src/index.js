@@ -1,15 +1,19 @@
-import B from './example'
+import React from 'react'
+import { render } from 'react-dom'
+
+import Simple from './example'
 
 /**
- * An example function
+ * The main react app
  *
- * @returns {object} an object
+ * @returns {object} The app data
  */
-function example() {
-  const o = { Hi: '5' }
-  return o
+function App() {
+  return (
+    <div>
+      <Simple />
+    </div>
+  )
 }
-example()
 
-const b = new B()
-console.log(b.method())
+render(<App />, document.getElementById('root'))
