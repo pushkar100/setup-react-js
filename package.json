@@ -14,8 +14,10 @@
     "checkstats:wba": "webpack-bundle-analyzer stats.json",
     "checkstats:sme": "source-map-explorer dist/*.js",
     "checkstats:bs": "bundle-stats --baseline stats.json",
-    "format": "prettier --write src/**/*.js",
-    "lint": "eslint \"src/**/*.js\" --quiet",
+    "format": "prettier --write src/**/*.*",
+    "format:check": "prettier --check src/**/*.*",
+    "lint": "eslint --ext .js,.jsx src --quiet",
+    "lint:fix": "eslint --ext .js,.jsx src --quiet --fix",
     "test": "jest",
     "create:docs": "jsdoc -c jsdoc.config.json"
   },
